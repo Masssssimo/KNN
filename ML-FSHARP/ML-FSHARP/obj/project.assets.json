@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\UNI YR 3\\Computer Applications\\Project\\ML-FSHARP\\ML-FSHARP\\ML-FSHARP\\ML-FSHARP.fsproj",
+      "projectUniqueName": "C:\\Users\\Mikes\\Desktop\\KNN\\ML-FSHARP\\ML-FSHARP\\ML-FSHARP.fsproj",
       "projectName": "ML-FSHARP",
-      "projectPath": "E:\\UNI YR 3\\Computer Applications\\Project\\ML-FSHARP\\ML-FSHARP\\ML-FSHARP\\ML-FSHARP.fsproj",
+      "projectPath": "C:\\Users\\Mikes\\Desktop\\KNN\\ML-FSHARP\\ML-FSHARP\\ML-FSHARP.fsproj",
       "packagesPath": "C:\\Users\\Mikes\\.nuget\\packages\\",
-      "outputPath": "E:\\UNI YR 3\\Computer Applications\\Project\\ML-FSHARP\\ML-FSHARP\\ML-FSHARP\\obj\\",
+      "outputPath": "C:\\Users\\Mikes\\Desktop\\KNN\\ML-FSHARP\\ML-FSHARP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mikes\\AppData\\Roaming\\NuGet\\NuGet.Config",
