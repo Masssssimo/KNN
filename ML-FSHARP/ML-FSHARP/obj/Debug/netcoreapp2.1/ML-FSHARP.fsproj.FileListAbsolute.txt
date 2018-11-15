@@ -1,0 +1,8 @@
+M:\ML-FSHARP\ML-FSHARP\bin\Debug\netcoreapp2.1\ML-FSHARP.deps.json
+M:\ML-FSHARP\ML-FSHARP\bin\Debug\netcoreapp2.1\ML-FSHARP.runtimeconfig.json
+M:\ML-FSHARP\ML-FSHARP\bin\Debug\netcoreapp2.1\ML-FSHARP.runtimeconfig.dev.json
+M:\ML-FSHARP\ML-FSHARP\bin\Debug\netcoreapp2.1\ML-FSHARP.dll
+M:\ML-FSHARP\ML-FSHARP\obj\Debug\netcoreapp2.1\ML-FSHARP.fsprojAssemblyReference.cache
+M:\ML-FSHARP\ML-FSHARP\bin\Debug\netcoreapp2.1\ML-FSHARP.pdb
+M:\ML-FSHARP\ML-FSHARP\obj\Debug\netcoreapp2.1\ML-FSHARP.dll
+M:\ML-FSHARP\ML-FSHARP\obj\Debug\netcoreapp2.1\ML-FSHARP.pdb
