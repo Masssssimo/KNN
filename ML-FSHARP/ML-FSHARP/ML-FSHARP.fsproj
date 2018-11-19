@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Include="KNN.fsx" />
+    <None Include="KNN-Smaller.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 

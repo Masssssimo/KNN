@@ -1,12 +1,12 @@
-#r @"C:\Users\Mikes\Desktop\KNN\ML-FSHARP\ML-FSHARP\.nuget\packages\fsharp.data\3.0.0\lib\net45\FSharp.Data.dll"
-#r @"C:\Users\Mikes\Desktop\KNN\ML-FSHARP\ML-FSHARP\.nuget\packages\fsharp.charting\2.1.0\lib\net45\FSharp.Charting.dll"
+#r @"E:\UNI YR 3\Computer Applications\Project\KNN\ML-FSHARP\ML-FSHARP\.nuget\packages\fsharp.data\3.0.0\lib\net45\FSharp.Data.dll"
+#r @"E:\UNI YR 3\Computer Applications\Project\KNN\ML-FSHARP\ML-FSHARP\.nuget\packages\fsharp.charting\2.1.0\lib\net45\FSharp.Charting.dll"
 
 open FSharp.Data
 open FSharp.Charting
 
 // Importing Data
-type importData = CsvProvider<"C:\Users\Mikes\Desktop\KNN\ML-FSHARP\ML-FSHARP\DataR2.csv">
-let data = importData.Load("C:\Users\Mikes\Desktop\KNN\ML-FSHARP\ML-FSHARP\DataR2.csv")
+type importData = CsvProvider<"E:\UNI YR 3\Computer Applications\Project\KNN\ML-FSHARP\ML-FSHARP\DataR2.csv">
+let data = importData.Load("E:\UNI YR 3\Computer Applications\Project\KNN\ML-FSHARP\ML-FSHARP\DataR2.csv")
 
 
 // Age Cancer True 
@@ -20,6 +20,7 @@ let ageFalse = [for r in data.Rows -> (r.Age,r.Classification.Equals(1))]
 
 
 (* ====== Visualization of Age and Glucose Cancer ====== *)
+
 // Gluecose Cancer True 
 let glucoseTrue = [for r in data.Rows -> (r.Glucose,r.Classification.Equals(2))] 
                                             |> List.filter(fun (x,y) -> y = true) 
@@ -36,7 +37,7 @@ let trueAgeGlucose = List.map2 (fun x y -> (x,y)) ageTrue glucoseTrue
 (*Cancer Comparison (AGE,GLUCOSE)*) 
 //Chart.Combine([
 //               falseAgeGlucose|>Chart.Point
-//              trueAgeGlucose|>Chart.Point]) |> Chart.Show
+//               trueAgeGlucose|>Chart.Point]) |> Chart.Show
  
 
 (* ====== Visualization of Age and BMI Cancer ====== *)
@@ -59,6 +60,7 @@ let trueAgeBMI = List.map2 (fun x y -> (x,y)) ageTrue bmiTrue
 
 
 (* ====== Visualization of Age and Insulin Cancer ====== *)
+
 // Insulin Cancer true 
 let insulinTrue = [for r in data.Rows -> (r.Insulin,r.Classification.Equals(2))]
                                         |> List.filter(fun (x,y) -> y = true) 
@@ -91,9 +93,9 @@ let falseInsulinRisistin = List.map2 (fun x y -> (x,y)) insulinFalse risistinFal
 let trueInsulinRisistin = List.map2 (fun x y -> (x,y)) insulinTrue risistinTrue
 
 (*Cancer Comparison (Insulin,Risistin)*)
-//Chart.Combine([
-//                falseInsulinRisistin|>Chart.Point
-//                trueInsulinRisistin|>Chart.Point])|> Chart.Show
+Chart.Combine([
+                falseInsulinRisistin|>Chart.Point
+                trueInsulinRisistin|>Chart.Point])|> Chart.Show
                
 
 // K Nearest Neighbor
